@@ -28,6 +28,17 @@
     text-decoration: none;
     color: #333;
   }
+  .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-pages,
+.nav-sections {
+  display: flex;
+  gap: 20px;
+}
 
   /* ---- hero ---- */
   section.hero {
@@ -76,12 +87,17 @@
 
 <header>
   <div class="wrap">
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="google-cybersecurity.html">Google Cybersecurity</a>
-      <a href="about.html">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+    <nav class="main-nav">
+      <div class="nav-pages">
+        <a href="about.html">About</a>
+        <a href="google-cybersecurity.html">Google Cybersecurity</a>
+      </div>
+
+      <div class="nav-sections">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -111,13 +127,59 @@
       </a>
     </div>
 
+  </section>
+
     <div class="project">
-      <h3><!-- Project title --></h3>
-      <p><!-- Short description --></p>
-      <!-- <a href="#">Link</a> -->
+      <h3>VIP Research Projects</h3>
+        <h4>
+          IoT: Internet of Threats, VR Side-Channel Attack | 1st Place, VIP Showcase 2026
+        </h4>
+
+        <ul>
+          <li>Engineered a VR side-channel attack using power signal analysis and transfer learning to infer user activity, achieving 97% classification accuracy and demonstrating potential privacy vulnerabilities</li>
+          <li>Analyzed 382+ power traces (635 Hz) using STFT and band-pass filtering (50–150 Hz) to build spectrogram datasets</li>
+          <li>Developed and evaluated transfer learning models including ResNet, MobileNet, and Inception, achieving 97% accuracy across 4 activity classes</li>
+        </ul>
+    
+
+      <h3>VIP Research Projects</h3>
+        <h4>
+          IoT: Internet of Threats—Malware classification using transfer learning
+        </h4>
+
+        <ul>
+          <li>Developed a CNN-based transfer learning pipeline to classify 25 malware families, achieving 99% accuracy</li>
+          <li>Expanded the dataset from 6,527 to 10,481 samples and augmented underrepresented malware families</li>
+          <li>Preprocessed and organized malware samples for model training and classification</li>
+        </ul>
+      </div>
+  
+<div class="project">
+      <h3>Predictive Asset Maintenance Dashboard — Hacknovation Hackathon</h3>
+        <!-- <h4>
+          IoT: Internet of Threats, VR Side-Channel Attack | 1st Place, VIP Showcase 2026
+        </h4> -->
+
+        <ul>
+          <li>Collaborated on a 3-day team project using real DelDOT road and bridge inspection data</li>
+          <li>Developed a dashboard using Kiro to visualize asset conditions and support maintenance decisions</li>
+          <li>Created risk scores from inspection data to help prioritize roads and bridges requiring attention</li>
+        </ul>
     </div>
 
-  </section>
+    <div class="project">
+      <h3>Sensify Lab</h3>
+        <h4>
+          Summer Scholar & Research Assistant
+        </h4>
+
+        <ul>
+          <li>Developed an application for large-scale social network data collection and analysis using the Bluesky API</li>
+          <li>Built and improved data visualization and user interface features to support research workflows</li>
+          <li>Conducted a usability study with 11 participants, implementing five revisions and establishing a baseline SUS score of 59</li>
+        </ul>
+    </div>
+
 
   <section id="skills">
     <h2>Skills</h2>
